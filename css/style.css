@@ -1,12 +1,19 @@
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype"); 
+  font-style: normal; 
+  font-weight: normal; 
+  } 
+
 html, body {
-    background-color: #999;
+    background-color: gray;
     height: 100%;
     font-size: 16px;
   }
   
   body {
     margin: 0;
-    font-family: Poiret One, Arial, sans-serif;
+    font-family: OpenSans, Arial, Helvetica, sans-serif;
   }
 
   .panel {
@@ -14,24 +21,48 @@ html, body {
     justify-content: space-between;
     align-items: stretch;
     padding-top: 28px;
-    margin: 0 15vw;
+    margin: 0 15%;
   }
 
   .container {
       max-width: 1660px;
+      height: 100%;
       margin: auto;
+      display: flex;
+      flex-direction: column;
     }
 
+  .slogan {
+    display: inline;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.775vw;
+    width: 40.9vw;
+    /* height: 107px; */
+    margin: auto;
+    margin-top: 7.65%;
+    text-align: center;
+  }
+
   .header {
-      min-height: 100%;
-      box-sizing: border-box;
+      height: 40.9vw;
       color: white;
       background: url("../img/banner-bg.jpg");
+      /* color: rgba(0,0,0,0.6); */
       background-repeat: no-repeat;
-      background-attachment: fixed;
       background-size: 100% auto;
+      display: block;
+      position: relative;
     }
   
+  /* .shadow {
+    position: absolute;
+    height: 40.9vw;
+    width: 100vw;
+    background: black;
+    opacity: 0.6;
+  } */
+
   .logo {
     height: 41px;
     width: 179px;
@@ -60,9 +91,3 @@ html, body {
     margin-right: 0;
   }
 
-  .slogan {
-      font-size: 13px;
-      display: block;
-      position: static;
-      margin: auto;
-  }
