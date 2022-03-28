@@ -425,6 +425,7 @@ a {text-decoration: none;}
   display: flex;
   flex-direction: column;
   max-width: 381px;
+  margin: 0 auto;
 }
 
 .last-posts-title,
@@ -434,6 +435,7 @@ a {text-decoration: none;}
   text-align: center;
   font-size: 14px;
   line-height: 29.15px;
+  text-transform: uppercase;
 }
 
 .last-posts-separator,
@@ -442,12 +444,13 @@ a {text-decoration: none;}
 .categories-separator {
   width: 66px;
   border-top: 3px solid #b59f5b;
-  margin: 8px auto 26px;
+  margin: 5px auto 20px;
 }
 
 .last-posts-list {
   display: flex;
   flex-direction: column;
+  margin-top: 10px;
 }
 
 .last-posts-list__item {
@@ -480,16 +483,17 @@ a {text-decoration: none;}
   margin: 0;
 }
 
-/* форма поиска */
 .search {
   position: relative;
   width: 270px;
   height: 48px;
   margin: 0 auto;
+  background: #b59f5b;
+  margin: 38px auto 0;
 }
 
 .search-input {
-  width: 100%;
+  width: 223px;
   height: 100%;
   border: none;
   padding: 0 0 0 18px;
@@ -511,19 +515,13 @@ a {text-decoration: none;}
   cursor: pointer;
 }
 
-.search-submit:before {
-  content: url("../svg/search.svg");
-  /* transform: scale(0.5); */
-  /* content: "";
-  background: url("../svg/search.svg") no-repeat center;
-  background-size: contain;
-  width: 20px;
-  height: 20px; */
-}
+.search-submit::before {content: url("../svg/search.svg");}
 
-/* .search-submit {transform: scale(0.5);} */
+.search-submit {transform: scale(0.42); }
 
 .search-input:hover {border: 1px solid #b59f5b;}
+
+.subscribe {margin-top: 54px;}
 
 .subscribe-title {
   text-align: center;
@@ -531,7 +529,50 @@ a {text-decoration: none;}
   line-height: 29.15px;
 }
 
-/* форма подписки */
+.subscribe-separator {margin-bottom: 20px;}
+
+.subscribe-elements {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+
+.subscribe-input {
+  width: 270px;
+  height: 48px;
+  border: none;
+  padding: 0 0 0 18px;
+  outline: none;
+  background: #f3f7f5;
+  border: 1px solid #f3f7f5;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+
+.subscribe-input:hover {border-color:#b59f5b;}
+
+.subscribe-submit {
+  width: 270px;
+  height: 48px;
+  border: none;
+  padding: 0;
+  outline: none;
+  background: #b59f5b;
+  border: 1px solid #b59f5b;
+  box-sizing: border-box;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  margin: 16px auto 54px;
+}
+
+.subscribe-submit:hover {
+  background: #323232;
+  border-color: #323232;
+}
+
+.tags-separator {margin-bottom: 20px;}
 
 .tags {
   display: flex;
@@ -558,9 +599,12 @@ a {text-decoration: none;}
   border-color: #b59f5b;
 }
 
+.categories {margin-top: 50px;}
+
 .categories-list {
   display: flex;
   flex-direction: column;
+  margin-top: -12px;
 }
 
 .categories-list__item {display: flex;}
