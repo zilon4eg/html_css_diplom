@@ -74,8 +74,8 @@
             </div>
         </div>
     </section>
-    <div class="middle-block">
-        <article class="posts">
+    <section class="middle-block">
+        <main class="posts">
             <div class="post">
                 <img class="post-img" src="img/last-post1.jpg" alt="чловек на песчаном пляже">
                 <div class="post-textbox">
@@ -91,8 +91,8 @@
                     <p class="post-description">Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города… Музеи еще закрыты. Что посмотреть?</p>
                 </div>
             </div>
-            <div class="posts-separator"></div>
-            <div class="post">
+            <article class="posts-separator"></div>
+            <article class="post">
                 <img class="post-img" src="img/last-post2.jpg" alt="девушка занимается йогой на пляже">
                 <div class="post-textbox">
                     <div class="post-tags-list">
@@ -107,8 +107,8 @@
                     <p class="post-description">Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.</p>
                 </div>
             </div>
-            <div class="posts-separator"></div>
-            <div class="post">
+            <article class="posts-separator"></div>
+            <article class="post">
                 <img class="post-img" src="img/last-post3.jpg" alt="человек поверх толпы">
                 <div class="post-textbox">
                     <div class="post-tags-list">
@@ -124,7 +124,7 @@
                 </div>
             </div>
             <div class="posts-separator"></div>
-            <div class="post">
+            <article class="post">
                 <img class="post-img" src="img/last-post4.jpg" alt="накрытый деревянный стол">
                 <div class="post-textbox">
                     <div class="post-tags-list">
@@ -138,9 +138,9 @@
                     </div>
                     <p class="post-description">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</p>
                 </div>
-            </div>
+            </article>
             <div class="posts-separator"></div>
-            <div class="post">
+            <article class="post">
                 <img class="post-img" src="img/last-post5.jpg" alt="подушка с надписью 'hang out spot'">
                 <div class="post-textbox">
                     <div class="post-tags-list">
@@ -155,8 +155,8 @@
                     </div>
                     <p class="post-description">Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.</p>
                 </div>
-            </div>
-        </article>
+            </article>
+        </main>
         <aside class="sidebar">
             <div class="last-posts">
                 <h2 class="last-posts-title">новые посты</h2>
@@ -262,7 +262,7 @@
                 </div>
             </div>
         </aside>
-    </div>
+    </section>
     <section class="shop">
         <h2 class="shop-title">наши изделия</h2>
         <div class="shop-separator"></div>
@@ -277,13 +277,14 @@
                         srcset="img/shop-item-desk1.jpg">
                     <img src="img/shop-item-mobile1.jpg" alt="подушка с надписью 'hang out spot'">
                 </picture>
+                <div class="product-list__item-border"></div>
                 <div class="product-list__item-data">
                     <b class="product-list__item-title">подушка на диван</b>
                     <p class="product-list__item-description">Набор из двух подушек с модными принтами. Видео о создании <a href="#0">здесь</a>.</p>
                     <div class="product-list__item-buy">
                         <div class="product-list__item-buy-cost-list">
-                            <b><s class="product-list__item-buy-cost">1000&#8381;</s></b>
-                            <b class="product-list__item-buy-cost">800&#8381;</b>
+                            <b><s class="product-list__item-buy-cost-old">1000 &#8381;</s></b>
+                            <b class="product-list__item-buy-cost-new">800 &#8381;</b>
                         </div>
                         <button class="product-list__item-buy-button" type="button">в магазин</button>
                     </div>
@@ -299,12 +300,14 @@
                         srcset="img/shop-item-desk2.jpg">
                     <img src="img/shop-item-mobile2.jpg" alt="плюшевый заяц и стопка книг">
                 </picture>
+                <div class="product-list__item-border"></div>
                 <div class="product-list__item-data">
                     <b class="product-list__item-title">кукла &#171;зайчик&#187;</b>
                     <p class="product-list__item-description">Интерьерная рукодельная кукла &#171;Зайчик&#187;, созданию которой посвящена <a href="#0">весенняя серия постов</a> в блоге и несколько подкастов.</p>
                     <div class="product-list__item-buy">
                         <div class="product-list__item-buy-cost-list">
-                            <b class="product-list__item-buy-cost">3500&#8381;</b>
+                            <b><s class="product-list__item-buy-cost-old"> </s></b>
+                            <b class="product-list__item-buy-cost-new">3500 &#8381;</b>
                         </div>
                         <button class="product-list__item-buy-button" type="button">в магазин</button>
                     </div>
@@ -320,13 +323,14 @@
                         srcset="img/shop-item-desk3.jpg">
                     <img src="img/shop-item-mobile3.jpg" alt="пустая рамка с шестью углами">
                 </picture>
+                <div class="product-list__item-border"></div>
                 <div class="product-list__item-data">
                     <b class="product-list__item-title">шестиугольная рамка</b>
                     <p class="product-list__item-description">Необычная рамка для украшения дома <a href="#0">&#171;Как сделать рамку из подручных средств за 30 минут&#187;</a></p>
                     <div class="product-list__item-buy">
                         <div class="product-list__item-buy-cost-list">
-                            <b><s class="product-list__item-buy-cost">1000&#8381;</s></b>
-                            <b class="product-list__item-buy-cost">800&#8381;</b>
+                            <b><s class="product-list__item-buy-cost-old">1000 &#8381;</s></b>
+                            <b class="product-list__item-buy-cost-new">800 &#8381;</b>
                         </div>
                         <button class="product-list__item-buy-button" type="button">в магазин</button>
                     </div>

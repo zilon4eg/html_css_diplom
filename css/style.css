@@ -205,13 +205,15 @@ a {text-decoration: none;}
   font-weight: bold;
 }
 
-.trends-title {
+.trends-title,
+.shop-title {
   text-align: center;
   font-size: calc(1rem + 0.3125vw);
   margin-top: 40px;
 }
 
-.trends-separator {
+.trends-separator,
+.shop-separator {
   display: block;
   width: 63px;
   height: 0;
@@ -301,7 +303,7 @@ a {text-decoration: none;}
 @media (min-width: 1201px) {
   .trends-title {
     font-size: 20px;
-    line-height: 29.15px;
+    line-height: 29px;
   }
 
   .trends-cards {
@@ -431,8 +433,7 @@ a {text-decoration: none;}
 .last-posts-title,
 .subscribe-title,
 .tags-title,
-.categories-title,
-.shop-title {
+.categories-title {
   text-align: center;
   font-size: 14px;
   line-height: 29.15px;
@@ -442,8 +443,7 @@ a {text-decoration: none;}
 .last-posts-separator,
 .subscribe-separator,
 .tags-separator,
-.categories-separator,
-.shop-separator {
+.categories-separator {
   width: 66px;
   border-top: 3px solid #b59f5b;
   margin: 5px auto 20px;
@@ -553,7 +553,8 @@ a {text-decoration: none;}
 
 .subscribe-input:hover {border-color:#b59f5b;}
 
-.subscribe-submit {
+.subscribe-submit,
+.product-list__item-buy-button {
   width: 270px;
   height: 48px;
   border: none;
@@ -569,7 +570,8 @@ a {text-decoration: none;}
   margin: 16px auto 54px;
 }
 
-.subscribe-submit:hover {
+.subscribe-submit:hover,
+.product-list__item-buy-button:hover {
   background: #323232;
   border-color: #323232;
 }
@@ -651,6 +653,13 @@ a {text-decoration: none;}
   flex-direction: column;
   align-items: center;
   width: 100%;
+  position: relative;
+}
+
+.product-list {margin-top: 11px;}
+
+.product-list__item:not(:first-child) {
+  margin-top: 100px;
 }
 
 .product-list__item-img {
@@ -664,27 +673,140 @@ a {text-decoration: none;}
   object-fit: cover;
 }
 
+.product-list__item-border {
+  border: 3px solid #b59f5b;
+  width: 338px;
+  height: 264px;
+  box-sizing:border-box;
+  position: absolute;
+  top: 265px;
+}
+
+.product-list__item-data {
+  align-items: flex-start;
+  margin-top: 17px;
+}
+
 .product-list__item-title {
   text-transform: uppercase;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 22px;
 }
 
 .product-list__item-description {
   font-size: 15px;
   line-height: 22px;
+  margin-top: 1px;
+}
+
+.product-list__item-description a {
+  color: #b59f5b;
+}
+
+.product-list__item-description a:hover {
+  text-decoration: underline;
 }
 
 .product-list__item-buy {
   display: flex;
   align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 6px;
 }
-/*  */
+
+.product-list__item-buy-cost-list {
+  width: auto;
+  align-items: flex-start;
+}
+
+.product-list__item-buy-cost-old {
+  font-size: 14px;
+  line-height: 24px;
+  position: relative;
+  top: 1px;
+}
+
+.product-list__item-buy-cost-new {
+  font-size: 20px;
+  line-height: 24px;
+  position: relative;
+  bottom: 6px;
+}
+
+.product-list__item-buy-button {
+  width: 140px;
+  height: 48px;
+  margin: 0;
+}
+
+.media {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.media-social-list {
+  display: flex;
+  height: 82px;
+  width: 100%;
+  background: #f3f7f5;
+  align-items: center;
+  justify-content: center;
+}
 
 .media-social__item {
   width: 25px;
   height: 25px;
   fill: black;
+  margin: 15px;
 }
 
 .media-social__item:hover {fill: #b59f5b;}
+
+.media-copyright {
+  text-align: center;
+  font-size: 12px;
+  color: #999999;
+  margin: 45px auto 35px;
+}
+
+@media (min-width: 640px) and (max-width: 1200px) {
+  .middle-block {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items:flex-start;
+    margin: 10px 0 0;
+  }
+
+  .posts {
+    width: 51%;
+  }
+
+  .sidebar {
+    width: 35.16%;
+  }
+
+  .product-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  .shop {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .product-list__item {
+    width: calc((100% - 55px * 2 - 68px) / 2);
+  }
+
+  .product-list__item:nth-child(-n + 2) {
+    margin-top: 0;
+  }
+}
+
