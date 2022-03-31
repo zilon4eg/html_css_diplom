@@ -94,7 +94,7 @@ a {text-decoration: none;}
   margin: 0 5vw;
 }
 
-@media (min-width: 640px) and (max-width: 1200px) {
+@media (min-width: 641px) and (max-width: 1200px) {
   .panel {
     padding-top: 43px;
     margin: 0 35px;
@@ -209,6 +209,7 @@ a {text-decoration: none;}
 
 .trends-title,
 .shop-title {
+  color: #0f0d0e;
   text-align: center;
   font-size: calc(1rem + 0.3125vw);
   margin-top: 40px;
@@ -280,7 +281,7 @@ a {text-decoration: none;}
 
 .trends-card-title:hover {color: #b59f5b;}
 
-@media (min-width: 640px) and (max-width: 1200px) {
+@media (min-width: 641px) and (max-width: 1200px) {
   .trends-title {
     font-size: 18px;
     line-height: 29px;
@@ -436,6 +437,7 @@ a {text-decoration: none;}
 .subscribe-title,
 .tags-title,
 .categories-title {
+  color: #0f0d0e;
   text-align: center;
   font-size: 14px;
   line-height: 29.15px;
@@ -524,6 +526,8 @@ a {text-decoration: none;}
 .search-submit {transform: scale(0.42); }
 
 .search-input:hover {border: 1px solid #b59f5b;}
+
+.search-submit:hover ~ .search-input {border: 1px solid #b59f5b;}
 
 .subscribe {margin-top: 54px;}
 
@@ -681,15 +685,6 @@ a {text-decoration: none;}
   object-fit: cover;
 }
 
-/* .product-list__item-border {
-  border: 3px solid #b59f5b;
-  width: 338px;
-  height: 264px;
-  box-sizing:border-box;
-  position: absolute;
-  top: 265px;
-} */
-
 .product-list__item-data {
   align-items: flex-start;
   margin-top: 17px;
@@ -785,7 +780,7 @@ a {text-decoration: none;}
   margin: 45px auto 35px;
 }
 
-@media (min-width: 640px) and (max-width: 1200px) {
+@media (min-width: 641px) and (max-width: 1200px) {
   .middle-block {
     flex-direction: row;
     flex-wrap: wrap;
