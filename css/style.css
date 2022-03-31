@@ -829,3 +829,47 @@ a {text-decoration: none;}
   }
 }
 
+@media (min-width: 1201px) {
+  .middle-block {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:flex-start;
+    margin: 64px 14.76% 0;
+  }
+
+  .posts {
+    display: flex;
+    flex-direction: column;
+    max-width: 66.24%;
+  }
+
+  .post {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+    margin-top: 60px;
+  }
+
+  .post:first-child {margin-top: 0;}
+
+  .post-textbox {
+    width: 47.1%;
+  }
+
+  .post-img {
+    width: 49.03%;
+    margin: 0;
+  }
+
+  .posts-separator {display: none;}
+
+  .sidebar {
+    width: 23.08%;
+  }
+
+  .shop {
+    margin-top: 64px;
+  }
+}
