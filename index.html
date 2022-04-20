@@ -18,16 +18,28 @@
                 <div class="hamburger-button-bottom"></div>
             </div>
             <nav class="top-menu">
-                <a class="top-menu__item" href="#0">главная</a>
-                <a class="top-menu__item" href="#0">посты</a>
-                <a class="top-menu__item" href="#0">статьи</a>
-                <a class="top-menu__item" href="#0">теги</a>
-                <a class="top-menu__item" href="#0">темы</a>
-                <a class="top-menu__item" href="#0">контакты</a>
+                <ul class="top-menu-list">
+                    <li><a class="top-menu__item" href="#0">главная</a></li>
+                    <li><a class="top-menu__item" href="#0">посты</a></li>
+                    <li><a class="top-menu__item" href="#0">статьи</a></li>
+                    <li><a class="top-menu__item" href="#0">теги</a></li>
+                    <li><a class="top-menu__item" href="#0">темы</a></li>
+                    <li><a class="top-menu__item" href="#0">контакты</a></li>
+                </ul>
             </nav>
             </div>
             <h1 class="slogan">блог о творчестве, спорте, и образе жизни</h1>
         </div>
+        <picture class="header-img-container">
+            <source
+                media="(min-width: 640px) and (max-width: 1200px)"
+                srcset="img/banner-bg-tablet.jpg">
+            <source
+                media="(min-width: 1200px)"
+                srcset="img/banner-bg.jpg">
+            <img class="header-img" src="img/banner-mobile.jpg"
+                alt="девушка занимается йогой на природе">
+        </picture>
     </header>
     <section class="trends">
         <h2 class="trends-title">сейчас в тренде</h2>
@@ -79,10 +91,10 @@
             <article class="post">
                 <img class="post-img" src="img/last-post1.jpg" alt="чловек на песчаном пляже">
                 <div class="post-textbox">
-                    <div class="post-tags-list">
-                        <a class="post-tags__item" href="#0">travel</a>
-                        <a class="post-tags__item" href="#0">health</a>
-                    </div>
+                    <ul class="post-tags-list">
+                        <li><a class="post-tags__item" href="#0">travel</a></li>
+                        <li><a class="post-tags__item" href="#0">health</a></li>
+                    </ul>
                     <h2><a class="post-title" href="#0">10 мест, ради которых стоит проснуться на рассвете</a></h2>
                     <div class="post-databox">
                         <time class="post-date" datetime="2019-06-10">10 июня 2019</time>
@@ -95,10 +107,10 @@
             <article class="post">
                 <img class="post-img" src="img/last-post2.jpg" alt="девушка занимается йогой на пляже">
                 <div class="post-textbox">
-                    <div class="post-tags-list">
-                        <a class="post-tags__item" href="#0">health</a>
-                        <a class="post-tags__item" href="#0">lifestyle</a>
-                    </div>
+                    <ul class="post-tags-list">
+                        <li><a class="post-tags__item" href="#0">health</a></li>
+                        <li><a class="post-tags__item" href="#0">lifestyle</a></li>
+                    </ul>
                     <h2><a class="post-title" href="#0">йога для начинающих в домашних условиях</a></h2>
                     <div class="post-databox">
                         <time class="post-date" datetime="2019-06-10">10 июня 2019</time>
@@ -111,9 +123,9 @@
             <article class="post">
                 <img class="post-img" src="img/last-post3.jpg" alt="человек поверх толпы">
                 <div class="post-textbox">
-                    <div class="post-tags-list">
-                        <a class="post-tags__item" href="#0">music</a>
-                    </div>
+                    <ul class="post-tags-list">
+                        <li><a class="post-tags__item" href="#0">music</a></li>
+                    </ul>
                     <h2><a class="post-title" href="#0">лучшие музыкальные фестивали этого лета</a></h2>
                     <div class="post-databox">
                         <time class="post-date" datetime="2019-06-10">10 июня 2019</time>
@@ -127,10 +139,10 @@
             <article class="post">
                 <img class="post-img" src="img/last-post4.jpg" alt="накрытый деревянный стол">
                 <div class="post-textbox">
-                    <div class="post-tags-list">
-                        <a class="post-tags__item" href="#0">lifestyle</a>
-                        <a class="post-tags__item" href="#0">food</a>
-                    </div>
+                    <ul class="post-tags-list">
+                        <li><a class="post-tags__item" href="#0">lifestyle</a></li>
+                        <li><a class="post-tags__item" href="#0">food</a></li>
+                    </ul>
                     <h2><a class="post-title" href="#0">наукоёмкий подход к кулинарии</a></h2>
                     <div class="post-databox">
                         <time class="post-date" datetime="2019-06-10">10 июня 2019</time>
@@ -143,11 +155,11 @@
             <article class="post">
                 <img class="post-img" src="img/last-post5.jpg" alt="подушка с надписью 'hang out spot'">
                 <div class="post-textbox">
-                    <div class="post-tags-list">
-                        <a class="post-tags__item" href="#0">lifestyle</a>
-                        <a class="post-tags__item" href="#0">interior</a>
-                        <a class="post-tags__item" href="#0">art</a>
-                    </div>
+                    <ul class="post-tags-list">
+                        <li><a class="post-tags__item" href="#0">lifestyle</a></li>
+                        <li><a class="post-tags__item" href="#0">interior</a></li>
+                        <li><a class="post-tags__item" href="#0">art</a></li>
+                    </ul>
                     <h2><a class="post-title" href="#0">делаем модные принты на подушках для интерьера</a></h2>
                     <div class="post-databox">
                         <time class="post-date" datetime="2019-06-10">10 июня 2019</time>
@@ -166,35 +178,35 @@
                         <img class="last-posts-list__item-img" src="img/2.jpg" alt="чловек на песчаном пляже">
                         <div class="last-post-list__item-textbox">
                             <time class="last-post-list__item-date" datetime="2019-06-14">14 июня 2019</time>
-                            <p class="last-post-list__item-title">10 мест, ради которых стоит проснуться</p>
+                            <a class="last-post-list__item-title" href="#0">10 мест, ради которых стоит проснуться</a>
                         </div>
                     </div>
                     <div class="last-posts-list__item">
                         <img class="last-posts-list__item-img" src="img/151.jpg" alt="девушка занимается йогой на пляже">
                         <div class="last-post-list__item-textbox">
                             <time class="last-post-list__item-date" datetime="2019-06-14">14 июня 2019</time>
-                            <p class="last-post-list__item-title">йога для домашних</p>
+                            <a class="last-post-list__item-title" href="#0">йога для домашних</a>
                         </div>
                     </div>
                     <div class="last-posts-list__item">
                         <img class="last-posts-list__item-img" src="img/45.jpg" alt="комната с мебелью">
                         <div class="last-post-list__item-textbox">
                             <time class="last-post-list__item-date" datetime="2019-06-14">14 июня 2019</time>
-                            <p class="last-post-list__item-title">как мы превратили классное местов балкон</p>
+                            <a class="last-post-list__item-title" href="#0">как мы превратили классное местов балкон</a>
                         </div>
                     </div>
                     <div class="last-posts-list__item">
                         <img class="last-posts-list__item-img" src="img/501.jpg" alt="накрытый деревянный стол">
                         <div class="last-post-list__item-textbox">
                             <time class="last-post-list__item-date" datetime="2019-06-14">14 июня 2019</time>
-                            <p class="last-post-list__item-title">кулинарный подход к науке</p>
+                            <a class="last-post-list__item-title" href="#0">кулинарный подход к науке</a>
                         </div>
                     </div>
                     <div class="last-posts-list__item">
                         <img class="last-posts-list__item-img" src="img/7.jpg" alt="три девушки с длинными волосами стоят спиной">
                         <div class="last-post-list__item-textbox">
                             <time class="last-post-list__item-date" datetime="2019-06-14">14 июня 2019</time>
-                            <p class="last-post-list__item-title">лучшие прически для распущенных волос</p>
+                            <a class="last-post-list__item-title" href="#0">лучшие прически для распущенных волос</a>
                         </div>
                     </div>
                 </div>
