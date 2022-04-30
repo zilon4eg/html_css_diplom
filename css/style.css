@@ -32,9 +32,36 @@ a {text-decoration: none;}
   flex-direction: column;
   align-items: center;
   position: relative;
+
+  background: url("../img/banner-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: cover;
 }
 
-/* .header::before {
+@media (min-width: 641px) and (max-width: 1200px) {
+  .header {
+    background: url("../img/banner-bg-tablet.jpg");
+    background-size: cover;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+  }
+
+  .motto {margin: 22% 0 23%;}
+}
+
+@media (min-width: 1201px) {
+  .header {
+    background: url("../img/banner-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .motto {margin: 7% 0 14%;}
+}
+
+.header::before {
   display: block;
   content: '';
   position: absolute;
@@ -45,9 +72,9 @@ a {text-decoration: none;}
   background: black;
   opacity: 0.6;
   z-index: 1;
-} */
+}
 
-.header-img-container {
+/* .header-img-container {
   display: flex;
   justify-content: center;
 }
@@ -55,14 +82,15 @@ a {text-decoration: none;}
 .header-img {
   opacity: 0.4;
   display: block;
-}
+} */
 
 .header-container {
   height: 100%;
   width: 95%;
   display: flex;
   flex-direction: column;
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
   align-items: center;
   z-index: 2;
 }
@@ -81,7 +109,7 @@ a {text-decoration: none;}
 }
 
 .top-menu {
-  width: 462px;
+  /* width: 462px; */
   margin: auto 0;
 }
 
@@ -95,6 +123,12 @@ a {text-decoration: none;}
 }
 
 .top-menu__item {
+  margin-left: 34px;
+}
+
+.top-menu__item:first-child {margin-left: 0;}
+
+.top-menu__item a {
   text-transform: uppercase;
   font-size: 13px;
   color: white;
@@ -173,34 +207,38 @@ a {text-decoration: none;}
   }
 }
 
-.slogan {
+.motto {
   display: inline;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 5.8vw;
   width: 15.6em;
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
   text-align: center;
   line-height: 1.4em;
   letter-spacing: 0.03em;
-  top: calc(50% - 1.4em);
-  left: calc(50% - 15.6em / 2);
+  /* top: calc(50% - 1.4em); */
+  /* left: calc(50% - 15.6em / 2); */
   color:#f3f7f5;
+  margin: 98% 0 98%;
 }
 
 @media (min-width: 641px) and (max-width: 1200px) {
-  .slogan {
+  .motto {
     font-size: 40px;
     line-height: 55px;
-    top: calc(57% - 55px);
+    /* top: calc(57% - 55px); */
+    margin: 22% 0 23%;
   }
 }
 
 @media (min-width: 1201px) {
-  .slogan {
+  .motto {
     font-size: 45px;
     line-height: 75px;
-    top: calc(48% - 75px);
+    /* top: calc(48% - 75px); */
+    margin: 7% 0 14%;
   }
 }
 
@@ -618,19 +656,23 @@ a {text-decoration: none;}
 }
 
 .tags-list {
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   margin: 0 -3px;
 }
 
 .tags-list__item {
+  padding: 7px 13px;
+  border: 3px solid #ededed;
+  margin: 3px;
+}
+
+.tags-list__item a {
   text-transform: uppercase;
   color: black;
   font-weight: bold;
   font-size: 12px;
-  padding: 7px 13px;
-  border: 3px solid #ededed;
-  margin: 3px;
 }
 
 .tags-list__item:hover {
@@ -640,12 +682,16 @@ a {text-decoration: none;}
 .categories {margin-top: 50px;}
 
 .categories-list {
+  list-style-type: none;
   display: flex;
   flex-direction: column;
   margin-top: -12px;
 }
 
-.categories-list__item {display: flex;}
+.categories-list__item {
+  display: flex;
+  border-bottom:  1px solid #ededed;
+}
 
 .categories-list__item-title {
   text-transform: lowercase;
@@ -668,8 +714,6 @@ a {text-decoration: none;}
   line-height: 40px;
   margin-left: 5px;
 }
-
-.categories-list__item-separator{border-top: 1px solid #ededed;}
 
 .shop {
   display: flex;
@@ -931,12 +975,15 @@ a {text-decoration: none;}
   }
 }
 
+.popup {height: 100%;}
+
 .popup-shadow {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: rgba(0,0,0,0.6);
-  position: absolute;
+  position: fixed;
   top: 0;
+  left: 0;
   z-index: 2;
 }
 
@@ -945,7 +992,7 @@ a {text-decoration: none;}
   width: 390px;
   height: 589px;
   background-color: white;
-  position: absolute;
+  position: fixed;
   top: calc((100vh - 589px) / 2);
   left: calc((100% - 390px) / 2);
   display: flex;

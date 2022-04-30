@@ -11,7 +11,7 @@
     <header class="header">
         <div class="header-container">
             <div class="panel">
-            <img class="logo" src="svg/noemi-logo.svg" alt="NOEMI">
+            <a href="#0"><img class="logo" src="svg/noemi-logo.svg" alt="NOEMI"></a>
             <div class="hamburger-button">
                 <div class="hamburger-button-top"></div>
                 <div class="hamburger-button-middle"></div>
@@ -19,18 +19,18 @@
             </div>
             <nav class="top-menu">
                 <ul class="top-menu-list">
-                    <li><a class="top-menu__item" href="#0">главная</a></li>
-                    <li><a class="top-menu__item" href="#0">посты</a></li>
-                    <li><a class="top-menu__item" href="#0">статьи</a></li>
-                    <li><a class="top-menu__item" href="#0">теги</a></li>
-                    <li><a class="top-menu__item" href="#0">темы</a></li>
-                    <li><a class="top-menu__item" href="#0">контакты</a></li>
+                    <li class="top-menu__item"><a href="#0">главная</a></li>
+                    <li class="top-menu__item"><a href="#0">посты</a></li>
+                    <li class="top-menu__item"><a href="#0">статьи</a></li>
+                    <li class="top-menu__item"><a href="#0">теги</a></li>
+                    <li class="top-menu__item"><a href="#0">темы</a></li>
+                    <li class="top-menu__item"><a href="#0">контакты</a></li>
                 </ul>
             </nav>
             </div>
-            <h1 class="slogan">блог о творчестве, спорте, и образе жизни</h1>
+            <h1 class="motto">блог о творчестве, спорте, и образе жизни</h1>
         </div>
-        <picture class="header-img-container">
+        <!-- <picture class="header-img-container">
             <source
                 media="(min-width: 641px) and (max-width: 1200px)"
                 srcset="img/banner-bg-tablet.jpg">
@@ -39,7 +39,7 @@
                 srcset="img/banner-bg.jpg">
             <img class="header-img" src="img/banner-mobile.jpg"
                 alt="девушка занимается йогой на природе">
-        </picture>
+        </picture> -->
     </header>
     <section class="trends">
         <h2 class="trends-title">сейчас в тренде</h2>
@@ -226,52 +226,46 @@
             <div class="tags">
                 <h2 class="tags-title">теги</h2>
                 <div class="tags-separator"></div>
-                <div class="tags-list">
-                    <a class="tags-list__item" href="#0">fashion</a>
-                    <a class="tags-list__item" href="#0">music</a>
-                    <a class="tags-list__item" href="#0">lifestyle</a>
-                    <a class="tags-list__item" href="#0">art</a>
-                    <a class="tags-list__item" href="#0">interior</a>
-                    <a class="tags-list__item" href="#0">travel</a>
-                    <a class="tags-list__item" href="#0">food</a>
-                    <a class="tags-list__item" href="#0">health</a>
-                </div>
+                <ul class="tags-list">
+                    <li class="tags-list__item"><a href="#0">fashion</a></li>
+                    <li class="tags-list__item"><a href="#0">music</a></li>
+                    <li class="tags-list__item"><a href="#0">lifestyle</a></li>
+                    <li class="tags-list__item"><a href="#0">art</a></li>
+                    <li class="tags-list__item"><a href="#0">interior</a></li>
+                    <li class="tags-list__item"><a href="#0">travel</a></li>
+                    <li class="tags-list__item"><a href="#0">food</a></li>
+                    <li class="tags-list__item"><a href="#0">health</a></li>
+                </ul>
             </div>
             <div class="categories">
                 <h2 class="categories-title">темы</h2>
                 <div class="categories-separator"></div>
-                <div class="categories-list">
-                    <div class="categories-list__item">
+                <ul class="categories-list">
+                    <li class="categories-list__item">
                        <a class="categories-list__item-title" href="#0">красота</a>
-                       <sup class="categories-list__item-count">12</sup>
-                    </div>
-                    <div class="categories-list__item-separator"></div>
-                    <div class="categories-list__item">
+                       <span><sup class="categories-list__item-count">12</sup></span>
+                    </li>
+                    <li class="categories-list__item">
                         <a class="categories-list__item-title" href="#0">здоровье</a>
-                        <sup class="categories-list__item-count">4</sup>
-                     </div>
-                     <div class="categories-list__item-separator"></div>
-                     <div class="categories-list__item">
+                        <span><sup class="categories-list__item-count">4</sup></span>
+                    </li>
+                     <li class="categories-list__item">
                         <a class="categories-list__item-title" href="#0">образ жизни</a>
-                        <sup class="categories-list__item-count">145</sup>
-                     </div>
-                     <div class="categories-list__item-separator"></div>
-                     <div class="categories-list__item">
+                        <span><sup class="categories-list__item-count">145</sup></span>
+                    </li>
+                    <li class="categories-list__item">
                         <a class="categories-list__item-title" href="#0">музыка</a>
-                        <sup class="categories-list__item-count">28</sup>
-                     </div>
-                     <div class="categories-list__item-separator"></div>
-                     <div class="categories-list__item">
+                        <span><sup class="categories-list__item-count">28</sup></span>
+                    </li>
+                    <li class="categories-list__item">
                         <a class="categories-list__item-title" href="#0">спорт</a>
-                        <sup class="categories-list__item-count">62</sup>
-                     </div>
-                     <div class="categories-list__item-separator"></div>
-                     <div class="categories-list__item">
+                        <span><sup class="categories-list__item-count">62</sup></span>
+                    </li>
+                    <li class="categories-list__item">
                         <a class="categories-list__item-title" href="#0">йога</a>
-                        <sup class="categories-list__item-count">8</sup>
-                     </div>
-                     <div class="categories-list__item-separator"></div>
-                </div>
+                        <span><sup class="categories-list__item-count">8</sup></span>
+                    </li>
+                </ul>
             </div>
         </aside>
     </div>
@@ -446,7 +440,7 @@
                 </svg>
             </a>
         </div>
-        <b class="media-copyright">Copyright © 2009–2019 City Blog LLC.</b>
+        <a class="media-copyright" href="#0"><b>Copyright © 2009–2019 City Blog LLC.</b></a>
     </footer>
 </body>
 </html>
